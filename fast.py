@@ -3,7 +3,7 @@ from fastapi.responses import FileResponse
 import pymongo
 
 client=pymongo.MongoClient('localhost',27017)
-db=client["bet_live"]
+db=client["finale"]
 collection5=db["data supprimer"]
 collection6=db["data supprimer1"]
 #collection6=db["pure_valubet"]
