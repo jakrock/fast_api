@@ -120,10 +120,12 @@
             const divElement = document.createElement("div");
             divElement.classList.add("my-div", "row","bg-info");
             console.log(i.but);
+            
+            let _1xbet=i["1xbet"]
             const valuebetElements = Object.entries(i.valuebet).map(([cle, valeur]) => `<span class="spanValue">${cle} &nbsp;&nbsp;&nbsp; ${parseFloat(valeur).toFixed(2)}</span>`).join('    ');
             const contenu = `<div class="contenu">
-                                <h5 class="e1xbet">${i.events_1xbet} <a href="" target="_blank">1xbet</a></h5>
-                                <h5 class="ebetkeen">${i.events_betkeen} <a href="" target="_blank">betkeen</a></h5>
+                                <h5 class="e1xbet">${_1xbet} <a href="" target="_blank">1xbet</a></h5>
+                                <h5 class="ebetkeen">${i.betkeen} <a href="" target="_blank">betkeen</a></h5>
                                 <h3 class="valuebet">${valuebetElements}</h3>
                                 <button  onclick="deleteData(this)" class="cbutton">supprimer</button>
                                 <div class="hidden-data" style="display: none;">
