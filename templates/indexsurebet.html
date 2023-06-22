@@ -106,7 +106,7 @@
     };
 
     async function frotte() {
-        let data = await getdata('http://127.0.0.1:8000/item/surebet');
+        let data = await getdata('http://35.200.218.236:8000/item/surebet');
         let data1=JSON.stringify(data);
         let data2=JSON.parse(data1)
 
@@ -148,7 +148,7 @@
 
             
 
-            fetch('http://127.0.0.1:8000/item/retour/surebet', {
+            fetch('http://35.200.218.236:8000/item/retour/surebet', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -170,7 +170,7 @@
 
 async function updateData() {
     try {
-        const response = await fetch("http://127.0.0.1:8000/item/surebet");
+        const response = await fetch("http://35.200.218.236:8000/item/surebet");
         const data = await response.json();
         const infoBoxes = document.querySelectorAll('.hidden-data');
 

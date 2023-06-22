@@ -12,7 +12,7 @@ app = FastAPI()
 
 @app.get("/indexsurebet")
 async def read_root():
-    return FileResponse("C:\\Users\\fibou\Documents\\nodeProjet\\fast_api\\templates\\indexsurebet.html")
+    return FileResponse("/home/romualdjja/projet/fast_api/templates/indexsurebet.html")
 
 
 
@@ -20,7 +20,7 @@ async def read_root():
 
 @app.get("/")
 async def read_root():
-    return FileResponse("C:\\Users\\fibou\Documents\\nodeProjet\\fast_api\\templates\\index.html")
+    return FileResponse("/home/romualdjja/projet/fast_api/templates/index.html")
 
 
 @app.get("/item/{item_id}")
@@ -87,4 +87,4 @@ async def datapi(item_id:str,debut:int=None,fin:int=None,etat:str=None):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app,host="127.0.0.1",port=8000)
+    uvicorn.run(app,host="35.200.218.236",port=8000)
